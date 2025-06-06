@@ -1,207 +1,206 @@
 body {
-  margin: 0; /* Remove a margem padrão do corpo da página */
-  font-family: Arial, sans-serif; /* Define a fonte usada no corpo do site */
-  background: url('irmao.jpg') no-repeat center center fixed; /* Define uma imagem de fundo fixa, centralizada */
-  background-size: cover; /* Faz a imagem cobrir todo o fundo da tela */
-  color: #fff; /* Define a cor do texto como branca */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('irmao.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
 }
 
 header {
-  background-color: rgb(109, 176, 212); /* Cor de fundo do cabeçalho */
-  display: flex; /* Ativa o Flexbox para organizar os itens no header */
-  align-items: center; /* Alinha verticalmente os itens ao centro */
-  justify-content: space-between; /* Espaça os itens igualmente (início e fim) */
-  padding: 10px 20px; /* Espaçamento interno do header (vertical 10px, horizontal 20px) */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra projetada abaixo do cabeçalho */
-  flex-wrap: wrap; /* Permite quebra de linha dos itens dentro do header */
-  text-align: center; /* Centraliza o texto (relevante caso algum texto esteja solto) */
+  background-color: rgb(109, 176, 212);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .logo {
-  height: 60px; /* Define a altura do logo */
-  margin-right: 15px; /* Espaço à direita do logo */
+  height: 60px;
+  margin-right: 15px;
 }
 
 .title {
-  font-size: 24px; /* Tamanho da fonte do título */
-  font-weight: bold; /* Deixa o texto em negrito */
-  color: black; /* Cor do título */
-  margin-right: auto; /* Empurra o resto dos itens para a direita */
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-right: auto;
 }
 
 nav {
-  display: flex; /* Usa Flexbox para os botões */
-  gap: 10px; /* Espaço entre os botões */
+  display: flex;
+  gap: 10px;
 }
 
 nav button {
-  background: none; /* Remove o fundo padrão dos botões */
-  border: none; /* Remove a borda dos botões */
-  color: black; /* Define a cor do texto nos botões */
-  font-size: 16px; /* Tamanho da fonte nos botões */
-  padding: 10px 15px; /* Espaçamento interno dos botões */
-  cursor: pointer; /* Mostra o ponteiro de clique ao passar o mouse */
-  transition: background 0.3s; /* Suaviza a mudança de fundo ao passar o mouse */
+  background: none;
+  border: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 nav button:hover {
-  background-color: rgba(255, 255, 255, 0.3); /* Cor de fundo ao passar o mouse */
-  border-radius: 5px; /* Arredonda os cantos do botão */
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
 }
 
 /* Banner */
 .banner-top {
-  width: 100%; /* Ocupar 100% da largura disponível */
-  max-height: 400px; /* Altura máxima do banner */
-  object-fit: cover; /* Faz a imagem se ajustar e preencher o espaço */
-  display: block; /* Exibe como bloco (evita espaços indesejados em imagens inline) */
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
 }
 
 /* Container principal */
 .container {
-  max-width: 1200px; /* Largura máxima do conteúdo */
-  margin: 50px auto; /* Espaço acima e abaixo + centraliza horizontalmente */
-  padding: 20px; /* Espaçamento interno */
-  background-color: rgba(255, 255, 255, 0.555); /* Fundo branco com transparência */
-  border-radius: 8px; /* Arredonda os cantos do container */
-  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Sombra ao redor do container */
-  text-align: center; /* Centraliza o texto */
-  color: #000; /* Define a cor do texto como preta */
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.555);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
+  color: #000;
 }
 
 /* Conteúdo principal */
 .hero-content {
-  padding: 40px 20px; /* Espaçamento interno */
+  padding: 40px 20px;
 }
 
 .hero-content h1 {
-  font-size: 2.8rem; /* Tamanho grande para o título principal */
-  margin-bottom: 20px; /* Espaço abaixo do título */
+  font-size: 2.8rem;
+  margin-bottom: 20px;
 }
 
 .hero-content p {
-  font-size: 1.2rem; /* Tamanho do parágrafo */
-  margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
 .btn-comprar {
-  display: inline-block; /* Permite aplicar margens e paddings como bloco */
-  background-color: #257af9; /* Cor de fundo azul */
-  color: white; /* Cor do texto branca */
-  padding: 10px 18px; /* Espaçamento interno */
-  border-radius: 6px; /* Bordas arredondadas */
-  text-decoration: none; /* Remove sublinhado do link */
-  font-weight: bold; /* Texto em negrito */
-  transition: background 0.3s; /* Suaviza mudança de cor */
-  margin-top: 10px; /* Espaço acima do botão */
+  display: inline-block;
+  background-color: #257af9;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-top: 10px;
 }
 
 .btn-comprar:hover {
-  background-color: #028aac; /* Muda a cor ao passar o mouse */
+  background-color: #028aac;
 }
 
 /* Produtos */
 .produtos {
-  display: flex; /* Flexbox para dispor os produtos em linha */
-  flex-wrap: wrap; /* Permite quebrar linha dos produtos */
-  justify-content: center; /* Centraliza os produtos na linha */
-  gap: 30px; /* Espaço entre os produtos */
-  margin-top: 30px; /* Espaço acima da seção de produtos */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .produto {
-  background-color: #fff; /* Fundo branco para o card do produto */
-  border-radius: 10px; /* Bordas arredondadas */
-  padding: 20px; /* Espaçamento interno */
-  width: 250px; /* Largura fixa do card */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra ao redor do card */
-  text-align: center; /* Centraliza o conteúdo dentro do card */
-  color: #000; /* Cor do texto preta */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  color: #000;
 }
 
 .produto img {
-  width: 150px; /* Largura da imagem */
-  height: 150px; /* Altura da imagem */
-  object-fit: cover; /* Faz a imagem se ajustar sem distorcer */
-  margin-bottom: 15px; /* Espaço abaixo da imagem */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
 .produto h3 {
-  margin: 10px 0; /* Espaço acima e abaixo do título */
-  font-size: 18px; /* Tamanho da fonte do título */
+  margin: 10px 0;
+  font-size: 18px;
 }
 
 .produto p {
-  font-size: 16px; /* Tamanho do parágrafo */
-  color: #333; /* Cor mais escura para facilitar leitura */
+  font-size: 16px;
+  color: #333;
 }
 
 /* Rodapé */
 footer {
-  background-color: #222; /* Fundo escuro */
-  color: white; /* Texto branco */
-  padding: 20px; /* Espaçamento interno */
-  text-align: center; /* Centraliza o conteúdo */
-  margin-top: 40px; /* Espaço acima do rodapé */
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
 }
 
-/* Estilos para telas menores */
 @media (max-width: 768px) {
   header {
-    flex-direction: column; /* Alinha os itens em coluna */
-    align-items: center; /* Centraliza os itens */
-    text-align: center; /* Centraliza texto */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .title {
-    margin-right: 0; /* Remove o empurrão lateral */
-    margin-top: 10px; /* Espaço acima do título */
+    margin-right: 0;
+    margin-top: 10px;
   }
 
   nav {
-    width: 100%; /* Ocupa toda a largura */
-    justify-content: center; /* Centraliza os botões */
-    flex-wrap: wrap; /* Permite quebra de linha */
-    margin-top: 10px; /* Espaço acima da navegação */
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
   }
 
   nav button {
-    padding: 8px 10px; /* Menor padding para telas pequenas */
-    font-size: 14px; /* Fonte menor para caber melhor */
+    padding: 8px 10px;
+    font-size: 14px;
   }
 
   .hero-content {
-    padding: 20px 10px; /* Reduz o espaçamento interno */
+    padding: 20px 10px;
   }
 
   .hero-content h1 {
-    font-size: 2rem; /* Diminui o tamanho do título */
+    font-size: 2rem;
   }
 
   .hero-content p {
-    font-size: 1rem; /* Diminui o tamanho do texto */
+    font-size: 1rem;
   }
 
   .produtos {
-    flex-direction: column; /* Empilha os produtos verticalmente */
-    align-items: center; /* Centraliza os produtos */
+    flex-direction: column;
+    align-items: center;
   }
 
   .produto {
-    width: 90%; /* Usa quase toda a largura disponível */
+    width: 90%;
   }
 
   .container {
-    margin: 20px; /* Menor margem nas laterais */
-    padding: 15px; /* Reduz padding interno */
+    margin: 20px;
+    padding: 15px;
   }
 
   .banner-top {
-    max-height: 200px; /* Reduz a altura do banner */
+    max-height: 200px;
   }
 
   footer {
-    font-size: 14px; /* Tamanho menor de texto no rodapé */
-    padding: 15px; /* Reduz padding no rodapé */
+    font-size: 14px;
+    padding: 15px;
   }
 }
