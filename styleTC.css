@@ -1,16 +1,16 @@
 /* RESET E BASE */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #f0f0f0;
-  margin: 0;
-  background: url('praia.jpg') no-repeat center center fixed;
+  font-family: Arial, sans-serif;
+  background: url('sunyy.jpg') no-repeat center center fixed;
   background-size: cover;
+  color: #333;
+  margin: 0;
 }
 
 /* HEADER */
@@ -19,9 +19,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding: 10px 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .logo {
@@ -36,10 +37,12 @@ header {
   margin-right: auto;
 }
 
+/* NAV */
 nav {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
 }
 
 nav button {
@@ -57,28 +60,23 @@ nav button:hover {
   border-radius: 5px;
 }
 
-/* CONTAINER PRINCIPAL */
+/* CONTAINER */
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 80px); /* Subtrai altura do header */
-  padding: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* CONTEÚDO TRABALHE CONOSCO */
+/* TRABALHE CONOSCO */
 .trabalhe-conosco {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  max-width: 750px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 40px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 100%;
 }
 
 .trabalhe-conosco .texto {
@@ -87,15 +85,17 @@ nav button:hover {
 }
 
 .trabalhe-conosco .texto h2 {
-  font-size: 2em;
+  font-size: 2.5rem;
   color: #222;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .trabalhe-conosco .texto p {
-  font-size: 1.1em;
+  font-size: 1.2rem;
   line-height: 1.6;
-  color: #444;
+  color: #333;
+  text-align: center;
 }
 
 .trabalhe-conosco .imagem {
@@ -112,40 +112,15 @@ nav button:hover {
 
 /* FOOTER */
 footer {
-  background-color: #222;
+  background-color: #000;
   color: white;
   padding: 20px;
   text-align: center;
   margin-top: 40px;
 }
 
+/* RESPONSIVO */
 @media (max-width: 768px) {
-  .container {
-    height: auto;
-    padding: 20px;
-  }
-
-  .trabalhe-conosco {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px 20px;
-  }
-
-  .trabalhe-conosco .texto,
-  .trabalhe-conosco .imagem {
-    flex: none;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .trabalhe-conosco .texto h2 {
-    font-size: 1.8em;
-  }
-
-  .trabalhe-conosco .texto p {
-    font-size: 1em;
-  }
-
   header {
     flex-direction: column;
     align-items: center;
@@ -153,10 +128,30 @@ footer {
   }
 
   .title {
-    margin: 10px 0 0 0;
+    margin-right: 0;
+    margin-top: 10px;
   }
 
   nav {
     justify-content: center;
+    gap: 8px;
+  }
+
+  .container {
+    margin: 30px 20px;
+    padding: 25px;
+  }
+
+  .trabalhe-conosco {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .trabalhe-conosco .texto h2 {
+    font-size: 2rem;
+  }
+
+  .trabalhe-conosco .texto p {
+    font-size: 1rem;
   }
 }
