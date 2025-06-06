@@ -5,12 +5,17 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;                /* Garante altura total da tela */
+  display: flex;              /* Ativa o modelo Flexbox */
+  flex-direction: column;     /* Coloca header, conteúdo e footer em coluna */
+}
+
 body {
   font-family: Arial, sans-serif;
   background: url('praia.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #333;
-  margin: 0;
 }
 
 /* HEADER */
@@ -68,6 +73,7 @@ nav button:hover {
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex: 1;  /* O segredo: faz o container crescer e empurrar o footer para baixo */
 }
 
 /* TRABALHE CONOSCO */
@@ -99,15 +105,7 @@ nav button:hover {
 }
 
 .trabalhe-conosco .imagem {
-  flex: 1;
-  min-width: 300px;
-  max-width: 400px;
-}
-
-.trabalhe-conosco .imagem img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: none; /* Remove a imagem lateral */
 }
 
 /* FOOTER */
@@ -116,7 +114,6 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
-  margin-top: 40px;
 }
 
 /* RESPONSIVO */
