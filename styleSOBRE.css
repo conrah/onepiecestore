@@ -1,4 +1,4 @@
-/* RESET E BASE */
+/* RESET E BASE - Remoção de margens e paddings padrões, definição de fonte e fundo */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-/* HEADER */
+/* HEADER - Cabeçalho com logo e título */
 header {
   background-color: rgb(109, 176, 212);
   display: flex;
@@ -38,7 +38,7 @@ header {
   margin-right: auto;
 }
 
-/* NAVEGAÇÃO */
+/* NAVEGAÇÃO - Botões do menu */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -61,7 +61,7 @@ nav button:hover {
   border-radius: 5px;
 }
 
-/* CONTAINER PRINCIPAL */
+/* CONTAINER PRINCIPAL - Bloco central com conteúdo */
 .container {
   max-width: 800px;
   margin: 50px auto;
@@ -87,7 +87,7 @@ nav button:hover {
   margin-bottom: 30px;
 }
 
-/* BOTÕES DE REDES */
+/* BOTÕES DE REDES - Links estilizados para redes sociais */
 .botoes-redes {
   display: flex;
   justify-content: center;
@@ -120,7 +120,7 @@ nav button:hover {
   opacity: 0.85;
 }
 
-/* BOTÃO VOLTAR */
+/* BOTÃO VOLTAR - Link de navegação para retornar */
 .voltar {
   display: inline-block;
   padding: 12px 24px;
@@ -137,7 +137,7 @@ nav button:hover {
   background-color: #4c91b3;
 }
 
-/* RODAPÉ */
+/* RODAPÉ - Informações finais da página */
 footer {
   background-color: #000;
   color: white;
@@ -146,6 +146,7 @@ footer {
   margin-top: 40px;
 }
 
+/* RESPONSIVO - Adaptação para telas menores */
 @media (max-width: 768px) {
   header {
     flex-direction: column;

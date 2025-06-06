@@ -1,4 +1,4 @@
-/* RESET E BASE */
+/* RESET E BASE - Reset de estilos e configuração base do layout */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
   color: #333;
 }
 
-/* HEADER */
+/* HEADER - Cabeçalho com logo e título */
 header {
   background-color: rgb(109, 176, 212);
   display: flex;
@@ -42,7 +42,7 @@ header {
   margin-right: auto;
 }
 
-/* NAV */
+/* NAV - Navegação principal com botões */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -65,7 +65,7 @@ nav button:hover {
   border-radius: 5px;
 }
 
-/* CONTAINER */
+/* CONTAINER - Conteúdo central da página */
 .container {
   max-width: 800px;
   margin: 50px auto;
@@ -88,12 +88,12 @@ nav button:hover {
   color: #333;
 }
 
-/* SEÇÃO CONTATO */
+/* SEÇÃO CONTATO - Informações de contato */
 .info {
   margin-bottom: 30px;
 }
 
-/* BOTÃO VOLTAR */
+/* BOTÃO VOLTAR - Estilização do botão de retorno */
 .voltar {
   display: inline-block;
   padding: 12px 24px;
@@ -110,7 +110,7 @@ nav button:hover {
   background-color: #4c91b3;
 }
 
-/* FOOTER */
+/* FOOTER - Rodapé da página */
 footer {
   background-color: #000;
   color: white;
@@ -118,7 +118,7 @@ footer {
   text-align: center;
 }
 
-/* RESPONSIVO */
+/* RESPONSIVO - Ajustes para telas menores */
 @media (max-width: 768px) {
   header {
     flex-direction: column;

@@ -1,3 +1,4 @@
+/* BODY - Estilo geral da página */
 body {
   background: url('madeira.png') no-repeat center center fixed;
   background-size: cover;
@@ -8,6 +9,7 @@ body {
   color: #333;
 }
 
+/* HEADER - Cabeçalho com logo e navegação */
 header {
   background-color: rgb(109, 176, 212);
   display: flex;
@@ -19,11 +21,13 @@ header {
   text-align: center;
 }
 
+/* LOGO - Imagem da marca */
 .logo {
   height: 60px;
   margin-right: 15px;
 }
 
+/* TÍTULO - Título do site */
 .title {
   font-size: 24px;
   font-weight: bold;
@@ -31,6 +35,7 @@ header {
   margin-right: auto;
 }
 
+/* NAVEGAÇÃO - Botões do menu */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +58,7 @@ nav button:hover {
   border-radius: 5px;
 }
 
-/* PRODUTOS */
+/* PRODUTOS - Seção com os produtos */
 .produtos {
   padding: 40px 20px;
   text-align: center;
@@ -65,6 +70,7 @@ nav button:hover {
   color: #ffffff;
 }
 
+/* CONTAINER - Grade de exibição dos produtos */
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -73,6 +79,7 @@ nav button:hover {
   margin: 0 auto;
 }
 
+/* PRODUTO - Estilização individual de cada item */
 .produto {
   background-color: #e6c690;
   padding: 20px;
@@ -103,6 +110,7 @@ nav button:hover {
   color: #555;
 }
 
+/* BOTÃO PRODUTO - Link para ação (ex: comprar) */
 .btn-produto {
   background-color: #c46800;
   color: white;
@@ -117,7 +125,7 @@ nav button:hover {
   background-color: #f7c900;
 }
 
-/* FOOTER */
+/* FOOTER - Rodapé da página */
 footer {
   background-color: #222;
   color: white;
@@ -126,6 +134,7 @@ footer {
   margin-top: 40px;
 }
 
+/* RESPONSIVO - Ajustes para telas menores */
 @media (max-width: 900px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
@@ -137,6 +146,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
