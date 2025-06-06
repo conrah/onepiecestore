@@ -1,184 +1,184 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Remove as margens padrão de todos os elementos */
+  padding: 0; /* Remove os paddings padrão de todos os elementos */
+  box-sizing: border-box; /* Faz com que o padding e a borda não aumentem o tamanho do elemento */
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  background: url('madeira.png') no-repeat center center fixed;
-  background-size: cover;
-  padding: 40px 0;
-  text-align: center; 
+  font-family: Arial, sans-serif; /* Define a fonte principal do site */
+  background-color: #f5f5f5; /* Cor de fundo (é sobrescrita abaixo pela imagem) */
+  background: url('madeira.png') no-repeat center center fixed; /* Imagem de fundo fixa e centralizada */
+  background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
+  padding: 40px 0; /* Espaçamento vertical interno no body */
+  text-align: center;  /* Centraliza o texto no body */
 }
 
 header {
-  background-color: rgb(109, 176, 212);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  flex-wrap: wrap;
-  text-align: center;
+  background-color: rgb(109, 176, 212); /* Define a cor de fundo do cabeçalho */
+  display: flex; /* Usa Flexbox para organizar os elementos internos */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+  padding: 10px 20px; /* Espaçamento interno do header */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Adiciona sombra abaixo do cabeçalho */
+  flex-wrap: wrap; /* Permite que os elementos quebrem linha se necessário */
+  text-align: center; /* Centraliza o texto (útil caso algum texto esteja direto) */
 }
 
 .logo {
-  height: 60px;
-  margin-right: 15px;
+  height: 60px; /* Altura fixa para o logo */
+  margin-right: 15px; /* Espaço à direita do logo */
 }
 
 .title {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
-  margin-right: auto;
+  font-size: 24px; /* Tamanho da fonte do título */
+  font-weight: bold; /* Deixa o texto em negrito */
+  color: black; /* Cor preta para o título */
+  margin-right: auto; /* Empurra os elementos seguintes para o final do header */
 }
 
 nav button {
-  background: none;
-  border: none;
-  color: black;
-  font-size: 16px;
-  padding: 10px 15px;
-  cursor: pointer;
-  transition: background 0.3s;
+  background: none; /* Remove o fundo padrão do botão */
+  border: none; /* Remove a borda do botão */
+  color: black; /* Define a cor do texto do botão */
+  font-size: 16px; /* Tamanho da fonte do botão */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  cursor: pointer; /* Altera o cursor para ponteiro ao passar sobre o botão */
+  transition: background 0.3s; /* Suaviza a transição de cor ao passar o mouse */
 }
 
 nav button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3); /* Cor de fundo quando passa o mouse */
+  border-radius: 5px; /* Arredonda os cantos do botão */
 }
 
 .container {
-  margin-top: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin-top: 30px; /* Espaço acima do container */
+  max-width: 1200px; /* Largura máxima do container */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+  padding: 0 20px; /* Espaçamento interno nas laterais */
 }
 
 h1 {
-  margin-bottom: 40px;
-  font-size: 32px;
-  color: #222;
+  margin-bottom: 40px; /* Espaço abaixo do título */
+  font-size: 32px; /* Tamanho da fonte do h1 */
+  color: #222; /* Cor do texto (cinza escuro) */
 }
 
 .episodios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 30px;
-  justify-items: center; 
+  display: grid; /* Usa Grid para organizar os episódios */
+  grid-template-columns: repeat(3, 1fr);  /* Divide em 3 colunas de mesmo tamanho */
+  gap: 30px; /* Espaçamento entre os cards */
+  justify-items: center;  /* Centraliza os cards dentro das colunas */
 }
 
 .episodio {
-  background-color: #e6c690;
-  border-radius: 12px;
-  padding: 20px;
-  width: 100%;
-  max-width: 300px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  text-align: center; 
+  background-color: #e6c690; /* Cor de fundo do card do episódio */
+  border-radius: 12px; /* Arredonda os cantos do card */
+  padding: 20px; /* Espaçamento interno */
+  width: 100%; /* Ocupa 100% da largura disponível */
+  max-width: 300px; /* Limita a largura máxima do card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do card */
+  display: flex; /* Usa Flexbox para alinhar conteúdo interno */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  align-items: center;  /* Centraliza os itens no eixo horizontal */
+  text-align: center;  /* Centraliza o texto dentro do card */
 }
 
 .episodio img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin-bottom: 15px;
+  width: 150px; /* Largura fixa da imagem */
+  height: 150px; /* Altura fixa da imagem */
+  object-fit: cover; /* Ajusta a imagem ao espaço sem distorcer */
+  margin-bottom: 15px; /* Espaço abaixo da imagem */
 }
 
 .episodio h3 {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #222;
+  font-size: 18px; /* Tamanho do título do episódio */
+  margin: 10px 0; /* Espaço acima e abaixo do título */
+  color: #222; /* Cor escura do texto */
 }
 
 .episodio p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 15px;
+  font-size: 16px; /* Tamanho do texto do parágrafo */
+  color: #555; /* Cor cinza do texto */
+  margin-bottom: 15px; /* Espaço abaixo do parágrafo */
 }
 
 .btn-assistir {
-  background-color: #257af9;
-  color: white;
-  padding: 10px 18px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
+  background-color: #257af9; /* Cor de fundo azul */
+  color: white; /* Cor do texto branca */
+  padding: 10px 18px; /* Espaçamento interno */
+  border-radius: 6px; /* Arredonda os cantos do botão */
+  text-decoration: none; /* Remove o sublinhado do link */
+  font-weight: bold; /* Deixa o texto em negrito */
+  transition: background 0.3s; /* Suaviza a transição de cor ao passar o mouse */
 }
 
 .btn-assistir:hover {
-  background-color: #028aac;
+  background-color: #028aac; /* Nova cor de fundo ao passar o mouse */
 }
 
 footer {
-  background-color: #222;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  margin-top: 40px;
+  background-color: #222; /* Cor de fundo escura */
+  color: white; /* Cor do texto branca */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto no rodapé */
+  margin-top: 40px; /* Espaço acima do rodapé */
 }
 
 .eps_destaques h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-  color: rgb(255, 255, 255);
+  font-size: 36px; /* Tamanho do subtítulo */
+  margin-bottom: 30px; /* Espaço abaixo do subtítulo */
+  color: rgb(255, 255, 255); /* Cor branca do texto */
 }
 
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: column; /* Coloca os elementos do header em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
   }
 
   .title {
-    margin-right: 0;
-    margin-top: 10px;
+    margin-right: 0; /* Remove o empurrão lateral */
+    margin-top: 10px; /* Adiciona espaço acima do título */
   }
 
   nav {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    width: 100%; /* Ocupa toda a largura da tela */
+    justify-content: center; /* Centraliza os botões */
+    flex-wrap: wrap; /* Permite quebra de linha dos botões */
+    margin-top: 10px; /* Espaço acima da navegação */
   }
 
   nav button {
-    padding: 8px 10px;
-    font-size: 14px;
+    padding: 8px 10px; /* Reduz o espaçamento interno */
+    font-size: 14px; /* Reduz o tamanho da fonte */
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 24px; /* Reduz o tamanho do título */
   }
 
   .eps_destaques h2 {
-    font-size: 26px;
+    font-size: 26px; /* Reduz o tamanho do subtítulo */
   }
 
   .episodios {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr; /* Mostra uma coluna apenas */
+    gap: 20px; /* Reduz o espaço entre os cards */
   }
 
   .episodio {
-    max-width: 90%;
+    max-width: 90%; /* Aumenta a largura dos cards para telas pequenas */
   }
 
   .episodio img {
-    width: 120px;
-    height: 120px;
+    width: 120px; /* Reduz a largura da imagem */
+    height: 120px; /* Reduz a altura da imagem */
   }
 
   footer {
-    font-size: 14px;
-    padding: 15px;
+    font-size: 14px; /* Reduz o tamanho da fonte no rodapé */
+    padding: 15px; /* Reduz o padding interno */
   }
 }
